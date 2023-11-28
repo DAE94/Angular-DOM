@@ -18,6 +18,8 @@ export class CompAComponent implements OnInit{
   }
   ngOnInit (){
     this.toMayus();
+    this.url();
+
   }
 
   toMayus(){
@@ -29,5 +31,12 @@ export class CompAComponent implements OnInit{
     // nodeTitol.innerHTML = this.compA.nom.toUpperCase();
   }
 
+  //---> Ex.2 <---//
+  //Amb funció
+  url() {
+    return document.location;
+  }
+  //Com a variable
+  docUrl = document.location;
 
 }
