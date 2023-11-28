@@ -32,7 +32,7 @@ export class CompAComponent implements OnInit{
   }
 
   //---> Ex.2 <---//
-  //Amb funció
+  //Amb una funció
   url() {
     return document.location;
   }
