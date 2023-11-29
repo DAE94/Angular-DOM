@@ -1,3 +1,4 @@
+
 export function yellowSubmarine(idEtiqueta) {
   let array = document.getElementsByTagName(idEtiqueta)
 
@@ -5,14 +6,32 @@ export function yellowSubmarine(idEtiqueta) {
     element.style.color = "yellow";
   }
 }
+
 export function changeSize() {
 
   let array = document.getElementsByTagName("table")
 
-  for (let element of array){
-    element.style.width="400px";
-
+  for (let element of array) {
+    element.style.width = "400px";
   }
 
+}
 
+// export function firstChar (){
+//
+//   let array = document.getElementsByClassName("llista").innerHTML;
+//
+//   for(let i=0;i<array.length;i++){
+//     let buildString = '<span class="customStyle">';
+//     buildString += array[i].subString(0,1);
+//     buildString += '</span>';
+//     buildString += array[i].subString(1);
+//     array[i].innerHTML = buildString;
+//   }
+// }
+
+export function countWords(textID){
+  let array = document.getElementById(textID).innerText.split(' ')
+
+  return array.length
 }

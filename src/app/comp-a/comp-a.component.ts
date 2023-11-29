@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // @ts-ignore
-import {changeSize, yellowSubmarine} from '../funcions.js';
+import {changeSize, countWords, firstChar, yellowSubmarine} from '../funcions.js';
 @Component({
   selector: 'app-comp-a',
   standalone: true,
@@ -15,7 +15,6 @@ export class CompAComponent implements OnInit{
   constructor() {
       this.compA = {
         nom : 'component a',
-        valor : 1,
     }
   }
   ngOnInit (){
@@ -24,6 +23,7 @@ export class CompAComponent implements OnInit{
 
     yellowSubmarine("h1");
     changeSize();
+    // firstChar ();
 
   }
 
@@ -44,4 +44,5 @@ export class CompAComponent implements OnInit{
   //Com a variable
   docUrl = document.location;
 
+  protected readonly countWords = countWords;
 }
