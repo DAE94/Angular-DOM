@@ -37,6 +37,7 @@ export function countWords(ID){
 
 export function changeBackground (){
 
- let image = document.getElementById("image");
- image.src = "../assets/vaquitaMarina.jpg";
+ document.getElementById("image").src = "../assets/vaquitaMarina.jpg";
+
 }
+

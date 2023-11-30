@@ -19,9 +19,6 @@ export class CompAComponent implements OnInit{
   }
   ngOnInit (){
     this.toMayus();
-    this.url();
-
-
     yellowSubmarine("h1");
     changeSize();
     changeBackground ();
@@ -30,11 +27,10 @@ export class CompAComponent implements OnInit{
 
   toMayus(){
     let nodeTitol = document.getElementById('titol')!;
-    let nodeTitolMayus = document.getElementById('titolMayus')!;
 
-    nodeTitolMayus.innerHTML = nodeTitol.innerHTML.toUpperCase();
+    nodeTitol.innerHTML = nodeTitol.innerHTML.toUpperCase();
 
-    // nodeTitol.innerHTML = this.compA.nom.toUpperCase();
+
   }
 
   //---> Ex.2 <---//
