@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // @ts-ignore
-import {changeSize, countWords, firstChar, yellowSubmarine} from '../funcions.js';
+import {changeBackground, changeSize, countWords, firstChar, yellowSubmarine} from '../funcions.js';
 @Component({
   selector: 'app-comp-a',
   standalone: true,
@@ -21,10 +21,11 @@ export class CompAComponent implements OnInit{
     this.toMayus();
     this.url();
 
+
     yellowSubmarine("h1");
     changeSize();
+    changeBackground ();
     // firstChar ();
-
   }
 
   toMayus(){

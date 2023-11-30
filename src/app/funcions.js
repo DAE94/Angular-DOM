@@ -30,8 +30,13 @@ export function changeSize() {
 //   }
 // }
 
-export function countWords(textID){
-  let array = document.getElementById(textID).innerText.split(' ')
-
+export function countWords(ID){
+  let array = document.getElementById(ID).innerText.split(' ')
   return array.length
+}
+
+export function changeBackground (){
+
+ let image = document.getElementById("image");
+ image.src = "../assets/vaquitaMarina.jpg";
 }
